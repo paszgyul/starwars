@@ -12,10 +12,12 @@ html, body{
 }
 
 .home-box{
-  background: transparent url('../public/home.jpeg');
+  background: transparent url('../public/home.jpg');
   background-size: cover;
-  background-position: center center;
-
+  background-position: center top;
+  /* background-size: 100% auto;
+  background-position: center bottom;
+   background-attachment: fixed; */
 }
 
 .App-logo {
