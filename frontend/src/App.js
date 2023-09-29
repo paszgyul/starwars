@@ -1,19 +1,37 @@
 import logo from './logo.svg';
+import { useEffect, useState, useRef } from 'react';
+import ReactDOM from "react-dom/client";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './App.css';
+
+import Home from './pages/Home.js'
+import Films from './pages/Films.js'
+import People from './pages/People.js'
+import Planets from './pages/Planets.js'
+import Spaceships from './pages/Spaceships.js'
+import Species from './pages/Species.js'
+import Vehicle from './pages/Vehicle.js'
+import NotFound from './pages/404.js'
 
 function App() {
   return (
-    <div className="App">
-      <div className='container-flex h-100'>
-        <div className='row m-0 p-0 h-100'>
-          <div className='col-12 p-0 home-box'>
-            {/* <img src="home.jpeg" className="w-100" alt="Star Wars" /> */}
-          </div>
-        </div>
+    <Router>
+      <div className="App">
+      <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/films" element={<Films />} />
+              {/* <Route path="/people" element={<People />} />
+              <Route path="/planets" element={<Planets />} />
+              <Route path="/spaceships" element={<Spaceships />} />
+              <Route path="/species" element={<Species />} />
+              <Route path="/vehicle" element={<Vehicle />} />
+              <Route path="*" element={<NotFound />} /> */}
+            </Routes>
       </div>
-    </div>
+    </Router>
   );
 }
+
 
 export default App;
 
