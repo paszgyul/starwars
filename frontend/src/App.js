@@ -30,6 +30,31 @@ function App() {
       </div>
     </Router>
   );
+
+  function fetchTheSW() {
+    fetch(`https://swapi.dev/`)
+      .then(response => response.json())
+      .then(json => {
+        console.log(json[0])
+
+        // setCatBgimage(json[0].url)
+        // setCatbreed(json[0].breeds[0].name)
+        // setCatData(json)
+        // setCatTemperament(json[0].breeds[0].temperament)
+        // setCatUrl(json[0].breeds[0].wikipedia_url)
+        // setCatOrigin(json[0].breeds[0].origin)
+        // setCatDescription(json[0].breeds[0].description)
+        // //setVisibleletter(catbreed.split(" "))
+        // console.log(catbreed)
+        // console.log(catbreed.split(''))
+        // console.log(visibleletter)
+        // setCatCompare(json[0].breeds[0].name)
+        // //comparePets(catCompare,dogCompare)
+        // GPTurlForCat(json[0].breeds[0].name)
+      })
+  }
+
+
 }
 
 

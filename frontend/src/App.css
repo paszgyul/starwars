@@ -10,7 +10,7 @@ html, body{
   height: 100%;
 }
 
-.homepage{
+.startanim{
   width: 100%;
   height: 100%;
 }
@@ -19,10 +19,26 @@ html, body{
   background: transparent url('../public/home.jpg');
   background-size: cover;
   background-position: center top;
-  /* background-size: 100% auto;
-  background-position: center bottom;
-   background-attachment: fixed; */
 }
+
+.herobox{
+  height: 700px;
+}
+
+.carousel-item img{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .App-logo {
   height: 40vmin;

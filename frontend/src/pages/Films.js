@@ -2,7 +2,7 @@ import React from 'react'
 import {Link, Route, Routes} from 'react-router-dom'
 import Filmscomponent from '../components/Films_component.jsx'
 
-function Home(){
+function Films(){
 
     return (
         <div className="homepage">
@@ -10,7 +10,7 @@ function Home(){
             <div className="row m-0 p-0 h-100">
             <div className="col-12 p-0">
                 content goes here
-                <Filmscomponent name="John" />
+                <Filmscomponent name="Return of the Jedi" />
             </div>
             </div>
         </div>
@@ -19,4 +19,4 @@ function Home(){
 }
 
 
-export default Home
+export default Films
