@@ -1,13 +1,30 @@
+@font-face {
+  font-family: TradeGothic;
+  src: url('../public/TradeGothicRegular.otf');
+}
+
+
 html, body{
   width: 100%;
   margin: 0;
   padding: 0;
   height: 100%;
+  background: #000000 url('../public/stars.jpg');
+  background-size: 100%;
+  overflow-x: hidden;
 }
 
 .App {
   width: 100%;
   height: 100%;
+}
+
+.gradient_white{
+  height: 200px;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 20%, rgba(255,255,255,0) 100%);
+  background-size: 100%;
+  background-repeat: repeat;
 }
 
 .startanim{
@@ -22,7 +39,11 @@ html, body{
 }
 
 .herobox{
-  height: 700px;
+  height: 100%;
+  color: #65d3ea;
+  font-family: TradeGothic;
+  text-align: center;
+  font-size: 70px;;
 }
 
 .carousel-item img{
